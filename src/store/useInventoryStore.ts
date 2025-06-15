@@ -116,7 +116,7 @@ const mockProducts: Product[] = [
 const mockBins: Bin[] = [
   {
     id: 'Bin-1',
-    productId: 'P001',
+    productId: 'P00622Q',
     location: 'Minneapolis',
     volume: 2000,
     ownerId: 'AG-001',
@@ -159,7 +159,7 @@ const mockBins: Bin[] = [
   },
   {
     id: 'Bin-2',
-    productId: 'P002',
+    productId: 'P00123Q',
     location: 'Duluth',
     volume: 1500,
     ownerId: 'AG-001',
@@ -191,7 +191,7 @@ const mockBins: Bin[] = [
   },
   {
     id: 'Bin-3',
-    productId: 'P003',
+    productId: 'P00456Q',
     location: 'St. Paul',
     volume: 1800,
     ownerId: 'AG-001',
@@ -234,7 +234,7 @@ const mockBins: Bin[] = [
   },
   {
     id: 'Bin-4',
-    productId: 'P004',
+    productId: 'P00622Q',
     location: 'Fargo',
     volume: 1200,
     ownerId: 'AG-001',

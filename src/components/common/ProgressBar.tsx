@@ -9,11 +9,11 @@ interface ProgressBarProps {
 }
 
 const colorClasses = {
-  blue: 'bg-blue-500',
-  green: 'bg-green-500',
-  red: 'bg-red-500',
-  yellow: 'bg-yellow-500',
-  purple: 'bg-purple-500'
+  blue: 'from-blue-400 to-blue-600',
+  green: 'from-green-400 to-emerald-600',
+  red: 'from-red-400 to-red-600',
+  yellow: 'from-yellow-400 to-amber-600',
+  purple: 'from-purple-400 to-purple-600'
 };
 
 export const ProgressBar: React.FC<ProgressBarProps> = ({ 
@@ -25,10 +25,16 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   const percentage = Math.min((value / max) * 100, 100);
   
   return (
-    <div className={clsx('w-full bg-gray-200 rounded-full h-2', className)}>
+    <div className={clsx('w-full bg-gray-200 rounded-full h-2.5 shadow-inner', className)}>
       <div
-        className={clsx('h-2 rounded-full transition-all duration-300', colorClasses[color])}
-        style={{ width: `${percentage}%` }}
+        className={clsx(
+          'h-2.5 rounded-full transition-all duration-700 ease-out bg-gradient-to-r shadow-sm',
+          colorClasses[color]
+        )}
+        style={{ 
+          width: `${percentage}%`,
+          boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+        }}
       />
     </div>
   );
